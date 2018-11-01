@@ -1,3 +1,5 @@
+# diccionario de contrarios
+# clase informacion: esta clase contiene el diferentes diccionarios. entre conocimiento , saludo, despedidas
 class info:
     Nombre = ""
     conocimiento = {
@@ -26,16 +28,17 @@ class info:
         'hasta luego':'adios',
         'adios':'no metas a Dios en esto'
     }
-
     def __init__(self):
         self
-
+    # funcion nombre    
+    # al iniciar el nombre la funcion saca el nombre de la persona que esta interactuando con el programa
     def setNombre(self,Nombre):
         self.Nombre = Nombre;
-
+    #funcion añadir conocimeinto 
+    # funcion que añade la palabra al diccionario conocimiento 
     def addConocimiento(self, pregunta, respuesta):
         self.conocimiento[pregunta] = respuesta
-
+# clase escritura
 class escritura:
     verbos = [
         'jugar',
@@ -52,7 +55,7 @@ class escritura:
 
     def __init__(self):
         self
-        
+# funcion principal      
 def main():
     lainfo = info()
     Saludo = input("Hola \n")
