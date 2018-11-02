@@ -33,10 +33,21 @@ class info:
     # funcion nombre    
     # al iniciar el nombre la funcion saca el nombre de la persona que esta interactuando con el programa
     def setNombre(self,Nombre):
+        """
+        
+        :param Nombre: Nombre de la persona 
+        :return:  retorna el nombre de la persona 
+        """
         self.Nombre = Nombre;
     #funcion añadir conocimeinto 
     # funcion que añade la palabra al diccionario conocimiento 
     def addConocimiento(self, pregunta, respuesta):
+          """
+        
+        :param pregunta: pregunta ingresada por la persona 
+        :param respuesta: respuesta mandada 
+        :return: 
+        """
         self.conocimiento[pregunta] = respuesta
 # clase escritura
 class escritura:
